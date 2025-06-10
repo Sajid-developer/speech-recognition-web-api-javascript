@@ -28,30 +28,34 @@ body {
 .voice_section .message {
     width: 100%;
     height: 200px;
-    background: white;
+    background: rgb(221, 242, 255);
     color: black;
     font-size: 16px;
     font-family: sans-serif;
     outline: none;
     border: 0;
-    border-radius: inherit;
+    border-radius: 12px;
     box-sizing: border-box;
     resize: none;
     padding: 15px;
     margin-bottom: 17px;
     scroll-behavior: smooth;
 }
-.voice_section .buttons{
+
+.voice_section .buttons {
     display: flex;
     justify-content: flex-start;
-    margin: 10px 4px;
+    flex-wrap: wrap;
+    gap:10px;
+    margin: 4px;
 }
 
 .voice_section .buttons button {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: rgb(13, 116, 243);
-    margin-right:12px;
+    margin-right: 12px;
     padding: 10px 26px;
     outline: none;
     border: 0;
@@ -64,18 +68,47 @@ body {
     cursor: pointer;
     transition: 0.2s ease;
 }
-.buttons button:hover{
+
+.buttons button:hover {
     background: rgb(8, 66, 137);
 }
-.buttons button.clearBtn{
+
+.buttons button.clearBtn {
     background-color: rgb(255, 53, 53);
 }
-.buttons button.clearBtn:hover{
+
+.buttons button.clearBtn:hover {
     background-color: rgb(255, 18, 18);
 }
-.buttons button i{
+
+.buttons button i {
     margin-left: 10px;
 }
-.buttons button i.fa-xmark{
+
+.buttons button i.fa-xmark {
     margin-left: 7px;
+}
+
+@media (max-width: 450px) {
+    .voice_section {
+        background-color: rgb(114, 203, 255);
+        width: 100%;
+        height: 100%;
+        padding: 20px 14px;
+        border-radius: 0;
+    }
+
+    .voice_section .buttons {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        gap: 14px;
+    }
+
+    .voice_section .buttons button{
+        flex: 1;
+        margin:0;
+        font-size: 14px;
+        padding: 10px 16px;
+    }
 }
