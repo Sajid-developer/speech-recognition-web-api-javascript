@@ -13,3 +13,8 @@ let scroll=msg.scrollHeight;
       }
         voice.start();
     }
+
+// code to clear message box ✅
+    function clearMessage(){
+        msg.value="";
+    }
