@@ -6,48 +6,76 @@ body {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 4, 28);
     font-family: sans-serif;
 }
 
 .voice_section {
-    position: absolute;
-    top: 450px;
-    left: 50px;
-    width: 460px;
+    width: 100%;
+    max-width: 530px;
     background: skyblue;
-    padding: 16px;
+    padding: 24px 30px;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 .voice_section .message {
     width: 100%;
-    height: 160px;
+    height: 200px;
     background: white;
     color: black;
     font-size: 16px;
     font-family: sans-serif;
     outline: none;
     border: 0;
-    border-radius: 10px;
+    border-radius: inherit;
     box-sizing: border-box;
     resize: none;
     padding: 15px;
     margin-bottom: 17px;
     scroll-behavior: smooth;
 }
+.voice_section .buttons{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 4px;
+}
 
-.voice_section button {
-    width: 180px;
-    background: crimson;
-    padding: 10px 20px;
+.voice_section .buttons button {
+    display: flex;
+    align-items: center;
+    background: rgb(13, 116, 243);
+    margin-right:12px;
+    padding: 10px 26px;
     outline: none;
     border: 0;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
-    border-radius: 4px;
+    border-radius: 30px;
     font-family: sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
     text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.buttons button:hover{
+    background: rgb(8, 66, 137);
+}
+.buttons button.clearBtn{
+    background-color: rgb(255, 53, 53);
+}
+.buttons button.clearBtn:hover{
+    background-color: rgb(255, 18, 18);
+}
+.buttons button i{
+    margin-left: 10px;
+}
+.buttons button i.fa-xmark{
+    margin-left: 7px;
 }

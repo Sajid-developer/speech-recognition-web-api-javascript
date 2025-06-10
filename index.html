@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ccedc0fc77.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Speech Recognition Web Api</title>
 </head>
 <body>
-    
+
     <section class="voice_section">
         <textarea class="message" placeholder="Type your message . . ." autofocus></textarea>
-        <button onclick="getVoice()" id="btn">use my voice</button>
+
+        <div class="buttons">
+          <button class="voiceBtn" onclick="getVoice()">use voice <i class="fa-solid fa-microphone"></i></button>
+          <button class="clearBtn" onclick="clearMessage()">clear message <i class="fa-solid fa-xmark"></i></button>
+        </div>
     </section>
 
    
