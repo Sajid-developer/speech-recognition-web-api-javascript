@@ -1,2 +1,2 @@
-# speech-recognition-web-api-javascript
+# Speech recognition-web-api-javascript
 A speech recognition tool using JavaScript web API.
